@@ -21,7 +21,6 @@
 - [Usage Examples](#usage-examples)  
 - [Contributing Guidelines](#contributing-guidelines)  
 - [Troubleshooting](#troubleshooting)
-- [License](#license)
 
 ---
 
@@ -269,15 +268,10 @@ Common issues and their solutions:
 
 ---
 
-## 📜 License 
-
-This project is licensed under the MIT License – see the [LICENSE](./LICENSE) file for details.
-
----
-
 # THANK YOU
 
 ---
+
 
 
 
