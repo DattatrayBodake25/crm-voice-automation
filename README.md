@@ -2,6 +2,9 @@
 
 [![Docker Hub](https://img.shields.io/badge/Docker-Hub-blue?logo=docker)](https://hub.docker.com/repository/docker/dattatraybodake/voice_bot-bot)
 [![License](https://img.shields.io/badge/License-MIT-green)](#license)
+[![Python](https://img.shields.io/badge/python-3.11+-blue?logo=python)](https://www.python.org/)  
+[![Postman](https://img.shields.io/badge/Postman-Collection-orange?logo=postman)](./VoiceBot_Collection.json)  
+[![Render](https://img.shields.io/badge/Deploy-Render-purple?logo=render)](https://render.com/)  
 
 ---
 
@@ -19,7 +22,8 @@
 - [Testing Instructions](#testing-instructions)  
 - [Usage Examples](#usage-examples)  
 - [Contributing Guidelines](#contributing-guidelines)  
-- [Troubleshooting](#troubleshooting)  
+- [Troubleshooting](#troubleshooting)
+- [License](#license)
 
 ---
 
@@ -265,7 +269,14 @@ Common issues and their solutions:
 
 ---
 
+## 📜 License 
+
+This project is licensed under the MIT License – see the [LICENSE](./LICENSE) file for details.
+
+---
+
 # THANK YOU
 
 ---
+
 
