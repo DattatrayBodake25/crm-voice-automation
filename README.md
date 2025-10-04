@@ -87,16 +87,18 @@ cd crm-voice-automation
 ```
 2. **Create and activate a virtual environment (optional):**
 ```bash
+#create virtual enviroment
 python -m venv venv
 
-# Windows
+#Activate venv for Windows
 venv\Scripts\activate
 
-# macOS/Linux
+#Activate venv for macOS/Linux
 source venv/bin/activate
 ```
 3. **Install dependencies:**
 ```bash
+#install all dependencies
 pip install -r requirements.txt
 ```
 
@@ -276,6 +278,7 @@ This project is licensed under the MIT License – see the [LICENSE](./LICENSE) 
 # THANK YOU
 
 ---
+
 
 
 
