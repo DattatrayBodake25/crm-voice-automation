@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+venv/
+.env
+
+# Pytest
+.pytest_cache/
+.cache
+
+# Docker
+*.log
+*.pid
+docker-compose.override.yml
+
+# VSCode / IDE
+.vscode/
+.idea/

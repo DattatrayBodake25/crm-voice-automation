@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  crm:
+    build:
+      context: .
+      dockerfile: Dockerfile.crm
+    container_name: mock_crm
+    ports:
+      - "8001:8001"
+    networks:
+      - botnet
+
+  bot:
+    build:
+      context: .
+      dockerfile: Dockerfile.bot
+    container_name: bot_service
+    env_file: .env
+    ports:
+      - "8000:8000"
+    depends_on:
+      - crm
+    networks:
+      - botnet
+
+networks:
+  botnet:
+    driver: bridge

@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "7c121e2e-ee24-4d97-8b3d-1ff47510d172",
+		"name": "VoiceBot Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47616610",
+		"_collection_link": "https://dattatraybodakedb-2933880.postman.co/workspace/Dattatray-Bodake's-Workspace~8da3d16e-b173-415c-8468-1b5cb6ac9f4f/collection/47616610-7c121e2e-ee24-4d97-8b3d-1ff47510d172?action=share&source=collection_link&creator=47616610"
+	},
+	"item": [
+		{
+			"name": "LEAD_CREATE",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let response = pm.response.json();\r",
+							"if(response.crm_call && response.crm_call.result && response.crm_call.result.lead_id){\r",
+							"    pm.environment.set(\"lead_id\", response.crm_call.result.lead_id);\r",
+							"}"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"transcript\": \"Add a new lead: Rohan Sharma from Gurgaon, phone 9876543210, source Instagram.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/bot/handle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"bot",
+						"handle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VISIT_SCHEDULE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"transcript\": \"Schedule a visit for lead {{lead_id}} at 2025-10-02T17:00:00+05:30. Notes: Discuss project details.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/bot/handle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"bot",
+						"handle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LEAD_UPDATE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"transcript\": \"Update lead {{lead_id}} to WON. Notes: Booked unit A2.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/bot/handle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"bot",
+						"handle"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
