@@ -116,7 +116,12 @@ uvicorn bot.app:app --host 0.0.0.0 --port 8000 --reload
 ```
 - Bot service docs: http://localhost:8000/docs
 - CRM service docs: http://localhost:8001/docs
-
+OR
+- Open Postman.
+- Import:
+  - VoiceBot_Collection.json
+  - VoiceBot_Environment.json
+- Run all three requests
 ---
 
 ## Dockerization
@@ -284,6 +289,7 @@ Common issues and their solutions:
 # THANK YOU
 
 ---
+
 
 
 
