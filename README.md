@@ -80,13 +80,16 @@ crm-voice-automation/
 
 ```bash
 git clone https://github.com/DattatrayBodake25/crm-voice-automation.git
+
 cd crm-voice-automation
 ```
 2. **Create and activate a virtual environment (optional):**
 ```bash
 python -m venv venv
+
 # Windows
 venv\Scripts\activate
+
 # macOS/Linux
 source venv/bin/activate
 ```
@@ -145,12 +148,14 @@ docker login
 2. **Tag Docker images:**
 ```bash
 docker tag voice_bot-bot dattatraybodake/voice_bot-bot:latest
+
 docker tag voice_bot-crm dattatraybodake/voice_bot-crm:latest
 ```
 
 3. **Push images:**
 ```bash
 docker push dattatraybodake/voice_bot-bot:latest
+
 docker push dattatraybodake/voice_bot-crm:latest
 ```
 
@@ -162,6 +167,7 @@ Enable Docker Content Trust to sign images:
 export DOCKER_CONTENT_TRUST=1
 
 docker push dattatraybodake/voice_bot-bot:latest
+
 docker push dattatraybodake/voice_bot-crm:latest
 ```
 - Ensure you have a Notary key configured for signing.
@@ -262,3 +268,4 @@ Common issues and their solutions:
 # THANK YOU
 
 ---
+
