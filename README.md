@@ -189,6 +189,19 @@ Deploying to Render:
 
 ---
 
+## Deployed Service URLs
+
+After deploying on Render, the services are accessible at the following URLs:
+
+| Service      | URL                                                                      |
+|--------------|--------------------------------------------------------------------------|
+| Mock CRM     | [https://voice-bot-crm.onrender.com](https://voice-bot-crm.onrender.com) |
+| Bot Service  | [https://voice-bot-bot.onrender.com](https://voice-bot-bot.onrender.com) |
+
+> Note: The bot service communicates with the mock CRM via the Render private network. Ensure environment variables like `CRM_URL` are set correctly when deploying.
+
+---
+
 ## Environment Variables & Configurations
 The project requires certain environment variables to be set in a `.env` file or your deployment environment.  
 
@@ -271,6 +284,7 @@ Common issues and their solutions:
 # THANK YOU
 
 ---
+
 
 
 
