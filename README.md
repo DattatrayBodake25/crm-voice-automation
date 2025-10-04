@@ -57,12 +57,32 @@ crm-voice-automation/
 ├── Dockerfile.crm                                                # Dockerfile for CRM service
 ├── docker-compose.yml                                            # Docker Compose configuration
 ├── .env                                                          # Environment variables
-├── Postman_Collection.json                                       # Postman collection
-└── Postman_Environment.json                                      # Postman environment for Lead ID testing
+├── VoiceBot_Collection.json                                      # Postman collection
+└── VoiceBot_Environment.json                                     # Postman environment for Lead ID testing
 ```
 
 ---
 
+## Prerequisites
+
+| Tool | Minimum Version | Installation |
+|------|----------------|--------------|
+| Docker | 20.x | [Docker Installation](https://docs.docker.com/get-docker/) |
+| Docker Compose | 2.x | [Docker Compose](https://docs.docker.com/compose/install/) |
+| Git | 2.x | [Git Installation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) |
+| Python | 3.11+ | [Python Installation](https://www.python.org/downloads/) |
+| Postman | Latest | [Postman](https://www.postman.com/downloads/) |
+
+---
+
+## Setup Instructions
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/DattatrayBodake25/crm-voice-automation.git
+cd crm-voice-automation
+```
 
 
 
